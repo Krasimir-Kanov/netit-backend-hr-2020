@@ -1,0 +1,221 @@
+html {
+    height: 100%;
+}
+
+#content {
+    text-align: center;
+}
+
+.dropdown-item {
+    background-color: #007bff;
+    color: ghostwhite !important;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.dropdown-item:hover {
+    background-color: ghostwhite;
+    color: black !important;
+    font-family: "Comic Sans MS", cursive, sans-serif;   
+}
+
+h4 {
+   font-family: "Comic Sans MS", cursive, sans-serif;
+   text-align: center;
+}
+
+#body {
+    background-color: ghostwhite;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: auto;
+    background-color: #007bff;
+}
+.category-input {
+    margin: 0 auto;
+    float: none;
+}
+
+.category-placeholder--category {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #007bff;
+}
+
+.form-text {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.register-success {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    color:  #01fe01;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+}
+
+.db-error {
+    font-weight: bold;
+    border: solid 2px #000000;
+    background: #4267b2;
+    text-transform: uppercase;
+    padding: 5px;
+    color: #000000;
+    margin: 5px 5px 5px 5px;
+}
+
+.form-error {
+    font-weight: bold;
+    color: red;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 12px;
+}
+
+.f-logo {
+    margin-right: 5px;
+    margin-top: 2.5px;
+}
+
+.flogotext {
+    font-size: 25px;
+    color: ghostwhite;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+}
+.mg-5 {
+margin: 5px;
+}
+
+.pd-7 {
+    padding: 7px;
+}
+
+.list-items {
+    color: #000000 !important;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Starting Bootstrap CSS */
+.specialbtn {
+    margin-top: 1px
+}
+.carousel-caption {
+    bottom: 280px;
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.carousel-caption p {
+    margin: auto;
+    font-style: 18px;
+    line-height: 1.9;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: gold;
+}
+
+.carousel-caption a {
+ text-transform: uppercase;
+ padding: 2px 2px;
+ display: inline-block;
+ color: #ffffff;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: ghostwhite;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+.nav-link:hover {
+    color: gold !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: ghostwhite;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar {
+    padding: 0% !important;
+    background-color: #007bff;
+}
+
+.nav-link {
+    padding: .2rem 1rem
+}
+.navbar-light .navbar-brand  {
+    color: ghostwhite;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: gold;
+}
+
+.w-100 {
+    height: 89.5vh;
+}
+
+
+.log-in-form {
+    margin-top: 40%;
+    top: 15vh;
+    padding: 10px;
+}
+
+.registration-form {
+    position: absolute;
+    top: 10vh;
+    padding: 10px;
+    width: 110%
+}
+
+.justify-content-center {
+    max-width: 100%;
+}
+
+.b-registration-text {
+    min-width: 140%;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.row {
+    margin-right: 0px !important;
+}
