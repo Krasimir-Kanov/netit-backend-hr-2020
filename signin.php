@@ -1,12 +1,9 @@
-<?php include('./templates/users/header.php'); ?>
+<?php include('./templates/headers/users_header.php'); ?>
 <?php include('./src/controllers/signin.php'); ?>
-
 
 <section class="row justify-content-center">
     <section class="col-12 col-sm-6 col-md-3">
-
         <form class="log-in-form" method="POST">
-
             <b class="form-text">Welcome</b>
 
             <div class="col-md-12">
@@ -20,19 +17,10 @@
                 <input class="input" placeholder="User Password" type="password" name="user_pass">
                 <?php displayFormError('signin', 'user_pass'); ?>
             </div>
-
-            <input type="hidden" name="user_request_tokken" value="1">
-
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            <input  type="hidden" name="user_request_tokken" value="1">
         </form>
-
 
     </section>
 </section>
-
-
-
-
-
-
-<?php include('./templates/users/footer.php'); ?>
+<?php include('./templates/footers/footer.php'); ?>

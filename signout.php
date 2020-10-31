@@ -4,4 +4,4 @@
 
 <?php
 Auth::signout();
-redirectTo("index");
+redirectTo('index');

@@ -1,6 +1,6 @@
 CREATE TABLE kkanov.tm_roles (
-id INTEGER auto_increment PRIMARY KEY,
-title VARCHAR (256) NOT NULL
+    id    INTEGER auto_increment PRIMARY KEY,
+    title VARCHAR (256)          NOT NULL
 );
 
 INSERT INTO kkanov.tm_roles(title) VALUES ('EMPLOY');

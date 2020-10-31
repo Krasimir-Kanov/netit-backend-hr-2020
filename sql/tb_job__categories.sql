@@ -1,7 +1,7 @@
-CREATE TABLE kkanov.tb_job__categories(
-job_offer_id INTEGER,
-category_id INTEGER,
-PRIMARY KEY (job_offer_id, category_id)
+CREATE TABLE kkanov.tb_job__categories (
+    job_offer_id INTEGER,
+    category_id  INTEGER,
+    PRIMARY KEY (job_offer_id, category_id)
 );
 
 INSERT INTO kkanov.tb_job__categories(job_offer_id, category_id) VALUES (1, 1);

@@ -1,6 +1,6 @@
 CREATE TABLE kkanov.tm_job_categories(
-id INTEGER AUTO_INCREMENT PRIMARY KEY,
-title VARCHAR(4000) NOT NULL
+    id    INTEGER AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(256)           NOT NULL
 );
 
 INSERT INTO kkanov.tm_job_categories(title) VALUES ("Information Technology (IT)");

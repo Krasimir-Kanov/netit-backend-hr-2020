@@ -1,10 +1,8 @@
-<?php include('./templates/employer/header.php'); ?>
+<?php include('./templates/headers/employer_header.php'); ?>
 <?php include('./src/util/static_list.php'); ?>
 <?php include('./src/controllers/employer.php'); ?>
 
-
 <br><h4>Fill the form to upload new job offer</h4>
-
 <section class="row justify-content-center">
     <section class="col-12 col-sm-6 col-md-3">
         <form class="log-in-form" method="POST">
@@ -21,5 +19,4 @@
         </form>
     </section>
 </section>
-
-<?php include('./templates/employer/footer.php'); ?>
+<?php include('./templates/footers/footer.php'); ?>

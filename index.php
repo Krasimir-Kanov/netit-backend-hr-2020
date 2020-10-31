@@ -1,13 +1,12 @@
-<?php include('./templates/users/header.php'); ?>
+<?php include('./templates/headers/users_header.php'); ?>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"> </li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"> </li>
     </ol>
 
     <div class="carousel-inner">
-
         <div class="carousel-item active">
         <img src="./img/welcome.jpg" class="d-block w-100" alt="">
             <div class="carousel-caption d-none d-md-block">
@@ -17,7 +16,6 @@
             </div>
         </div>
 
-        
         <div class="carousel-item">
         <img src="./img/welcome.jpg" class="d-block w-100" alt="">
             <div class="carousel-caption d-none d-md-block">
@@ -37,5 +35,4 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-<?php include('./templates/users/footer.php'); ?>
+<?php include('./templates/footers/footer.php'); ?>

@@ -1,18 +1,12 @@
-<?php include('./templates/users/header.php');       ?>
+<?php include('./templates/headers/users_header.php');       ?>
 <?php include('./src/controllers/signup.php'); ?>
-
-<!-- РЕГИСТРАЦИЯ -->
 
 <section class="row justify-content-center">
     <section class="col-12 col-sm-6 col-md-3">
-
         <form class="registration-form" method="POST">
-
             <b class="form-text">Employ Registration Form</b>
-
             <b class="b-registration-text">Personal Information</b>
             <div class="form-row">
-
                 <div class="col-md-6">
                     <?php displayFormError('signup', 'user_name'); ?>
                     <input placeholder="User name" class="input" type="text" name="user_name">
@@ -63,12 +57,9 @@
                     <input placeholder="Repeat Password" class="input" type="password" name="user_pass_repeat">
                 </div>
                 <input type='hidden' name="user_request_tokken" value="1">
-
                 <input type="submit" class="btn btn-primary btn-block">
             </div>
         </form>
-
     </section>
 </section>
-
-<?php include('./templates/users/footer.php'); ?>
+<?php include('./templates/footers/footer.php'); ?>
