@@ -72,4 +72,4 @@
     <?php } ?>
     </div>
   </nav>
-</div id="content">
+  </div id="content">

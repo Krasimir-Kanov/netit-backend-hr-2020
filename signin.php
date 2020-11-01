@@ -18,7 +18,7 @@
                 <?php displayFormError('signin', 'user_pass'); ?>
             </div>
             <button type="submit" class="btn btn-primary btn-block">Submit</button>
-            <input  type="hidden" name="user_request_tokken" value="1">
+            <input type="hidden" name="user_request_tokken" value="1">
         </form>
 
     </section>

@@ -25,11 +25,13 @@
     <?php if (Auth::isNotAuthenticated()) { ?>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"> <a class="nav-link" href="index.php">
-        <img src="./img/home.png" width="30" height="30" class="d-inline-block align-top"></a> </li>
+            <img src="./img/home.png" width="30" height="30" class="d-inline-block align-top"></a> </li>
         <li class="nav-item"> <a class="nav-link" href="signup.php">Employ</a> </li>
         <li class="nav-item"> <a class="nav-link" href="signup-employer.php">Employer</a> </li>
       </ul>
-      <ul class="navbar-nav ml-auto"> <li class="nav-item"><a class="nav-link" href="signin.php">Sign In</a> </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="signin.php">Sign In</a>
+      </ul>
     <?php } ?>
 
     <?php if (Auth::isAuthenticated()) { ?>

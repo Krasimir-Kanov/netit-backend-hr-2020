@@ -17,18 +17,22 @@ if (isset($_POST['user_request_tokken']) && $_POST['user_request_tokken'] == 1) 
             'user_data_collection' => $userRecord,
             'user_role_collection' => $UserRoleCollection
         ));
-            
-        if(Auth::isAdmin()) {
-            redirectTo('admin'); }
-                
-        if(Auth::isEmploy()) {
-            redirectTo('jobs'); }
-        
-        if(Auth::isEmployer()) {
-            redirectTo('employer'); }
 
-        if(Auth::isHR()) {
-            redirectTo('HR'); }
+        if (Auth::isAdmin()) {
+            redirectTo('admin');
+        }
+
+        if (Auth::isEmploy()) {
+            redirectTo('jobs');
+        }
+
+        if (Auth::isEmployer()) {
+            redirectTo('employer');
+        }
+
+        if (Auth::isHR()) {
+            redirectTo('HR');
+        }
     }
     return setFormError(
         "signin",

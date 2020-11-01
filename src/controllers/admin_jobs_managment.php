@@ -1,6 +1,7 @@
 <?php
 if ((!Auth::isAdmin() || Auth::isHR())) {
-    redirectTo('index'); }
+    redirectTo('index');
+}
 
 if (isset($_POST["create_new_job_offer_tokken"]) && $_POST["create_new_job_offer_tokken"] == '1') {
     $jobTitle    = $_POST['job_title'];
@@ -12,4 +13,5 @@ if (isset($_POST["create_new_job_offer_tokken"]) && $_POST["create_new_job_offer
 
     $postID = Database::getLastInsertedId();
     $createJobCategoryQuery = "INSERT INTO tb_job__categories(job_offer_id, category_id) VALUES ($postID, $jobCategory)";
-    Database::query($createJobCategoryQuery); }
+    Database::query($createJobCategoryQuery);
+}

@@ -1,3 +1,5 @@
 <?php
-function redirectTo($pageName) {
-return header('Location: ' . $pageName . '.php'); }
+function redirectTo($pageName)
+{
+    return header('Location: ' . $pageName . '.php');
+}

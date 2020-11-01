@@ -17,7 +17,6 @@
                     <input placeholder="Date of Birth" class="input" onfocus="(type='date')" name="user_age">
                 </div>
 
-
                 <div class="col-md-6">
                     <?php displayFormError('signup', 'user_fname'); ?>
                     <input placeholder="First Name" class="input" type="text" name="user_fname">

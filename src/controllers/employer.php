@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST["create_new_job_offer_tokken"]) && $_POST["create_new_job_offer_tokken"] == '1') {
+if (isset($_POST["create_new_job_offer_tokken"]) && $_POST["create_new_job_offer_tokken"] == '1') {
     $jobTitle    = $_POST['job_title'];
     $jobCategory = $_POST['job_category'];
     $jobContent  = $_POST['job_content'];
@@ -9,4 +9,5 @@ if(isset($_POST["create_new_job_offer_tokken"]) && $_POST["create_new_job_offer_
 
     $postID = Database::getLastInsertedId();
     $createJobCategoryQuery = "INSERT INTO tb_job__categories(job_offer_id, category_id) VALUES ($postID, $jobCategory)";
-    Database::query($createJobCategoryQuery); }
+    Database::query($createJobCategoryQuery);
+}

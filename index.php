@@ -8,7 +8,7 @@
 
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="./img/welcome.jpg" class="d-block w-100" alt="">
+            <img src="./img/welcome.jpg" class="d-block w-100" alt="">
             <div class="carousel-caption d-none d-md-block">
                 <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">Registration form for Employers</h5>
                 <p class="animate__animated animate__fadeIn" style="animation-delay: 0.8s">If you are looking for a new EMPLOY register today and find it!</p>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="carousel-item">
-        <img src="./img/welcome.jpg" class="d-block w-100" alt="">
+            <img src="./img/welcome.jpg" class="d-block w-100" alt="">
             <div class="carousel-caption d-none d-md-block">
                 <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 0.5s">Registration form for Employ</h5>
                 <p class="animate__animated animate__fadeIn" style="animation-delay: 0.8s">If you are looking for JOB please register and find your job!</p>

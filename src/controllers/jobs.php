@@ -1,10 +1,12 @@
 <?php
 if (Auth::isNotAuthenticated()) {
-    redirectTo("index"); }
+    redirectTo("index");
+}
 /* ИЗБОРЪТ НА КАТЕГОРИЯ И СЛЕД ТОВА ТЪРСЕНЕТО ПО КАТЕГОРИЯ НЕ РАБОТИ! (ЛИСТВАТ СЕ ВСИЧКИ ОБЯВИ) РЕШЕНИЕТО НА ПРОБЛЕМА ->
 (Да направим функция която да ни връща категорията да я подаваме на Hidden поле в формата и винаги когато 
 ползваме формичката да имаме последната категория която е избрана с q_selectora в Jobs.php) */
-function listAllJobOffers() {
+function listAllJobOffers()
+{
     $myCategory         = null;
     if (isset($_GET['job_search_tokken']) and $_GET['job_search_tokken'] == 1) {
         $searchQuery            = $_GET['q'];
@@ -15,20 +17,25 @@ function listAllJobOffers() {
                                                 WHERE a.id = b.job_offer_id     AND 
                                                 $categoryQuery 
                                                 a.$searchDescriptorColumn LIKE '%$searchQuery%'";
-        return Database::query($requestQuery); }
-    
+        return Database::query($requestQuery);
+    }
+
     if (isset($_GET['category'])) {
 
         $myCategory = $_GET['category'];
         return Database::query("SELECT * FROM tb_job_offer a,
                            tb_job__categories b
                            WHERE a.id = b.job_offer_id AND
-                           b.category_id = $myCategory"); }
+                           b.category_id = $myCategory");
+    }
 
     $pageLimit  = Pagination::getPageLimit();
     $pageOffset = Pagination::getPageOffset();
     Pagination::setTotalCount(Database::count("tb_job_offer"));
-    return Database::getAll("SELECT * FROM tb_job_offer LIMIT $pageOffset, $pageLimit"); }
+    return Database::getAll("SELECT * FROM tb_job_offer LIMIT $pageOffset, $pageLimit");
+}
 
-function listAllJobsCategory() {    
-    return Database::query("SELECT * FROM tm_job_categories"); }
+function listAllJobsCategory()
+{
+    return Database::query("SELECT * FROM tm_job_categories");
+}

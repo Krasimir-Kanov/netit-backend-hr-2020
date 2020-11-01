@@ -24,8 +24,8 @@
   <nav class="navbar navbar-expand-lg navbar-light static-top">
     <?php if (Auth::isNotAuthenticated()) { ?>
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"> <a class="nav-link" href="index.php"> 
-        <img src="./img/home.png" width="30" height="30" class="d-inline-block align-top"></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="index.php">
+            <img src="./img/home.png" width="30" height="30" class="d-inline-block align-top"></a> </li>
         <li class="nav-item"> <a class="nav-link" href="signup.php">Employ</a> </li>
         <li class="nav-item"> <a class="nav-link" href="signup-employer.php">Employer</a> </li>
       </ul>
